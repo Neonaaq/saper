@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
             T[i][j]=0;
         }    
     }
-    if((opt=getopt(argc,argv,"f:"))!= -1)   // sprawdzamy czy została podana jakaś funkcja
+    if((opt=getopt(argc,argv,"f:"))!= -1)   // sprawdzamy czy została podana jakaś flaga
     {
         if(opt == 'f')
         {
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
             printf("Nieznana funkcja lub brak podanego argumentu.");
         }
     }
-    else        // jeżeli nie została podana funkcja to wykonuje się standardowe działanie programy
+    else        // jeżeli nie została podana flaga to wykonuje się standardowe działanie programu
     {
         printf("Poziomy:\n 1. latwy - 9x9\n 2. sredni - 16x16\n 3. trudny - 16x30\n 4. Wlasna plansza\nPodaj poziom (1-3): ");
         scanf("%d",&poziom);
